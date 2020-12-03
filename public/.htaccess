@@ -64,6 +64,3 @@ DirectoryIndex index.php
         # RedirectTemp cannot be used instead
     </IfModule>
 </IfModule>
-<VirtualHost hostname:80>
-   SetEnv APP_ENV production
-</VirtualHost>
