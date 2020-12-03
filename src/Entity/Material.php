@@ -41,7 +41,7 @@ class Material implements \Serializable
     private $description;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="boolean", options={"default":"0"})
      * @Groups("group_material")
      * @Groups("group_borrow_material")
      * @Groups("group_user")
