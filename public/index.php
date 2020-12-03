@@ -21,10 +21,10 @@ if ($trustedHosts = $_SERVER['TRUSTED_HOSTS'] ?? $_ENV['TRUSTED_HOSTS'] ?? false
 }
 
 $dotenv = new Dotenv();
-//$dotenv->load(__DIR__.'/.env');
+$dotenv->load(__DIR__.'/.env');
 
 // You can also load several files
-$dotenv->load(__DIR__.'/.env', __DIR__.'/.env.prod');
+//$dotenv->load(__DIR__.'/.env', __DIR__.'/.env.dev');
 
 $kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);
 $request = Request::createFromGlobals();
