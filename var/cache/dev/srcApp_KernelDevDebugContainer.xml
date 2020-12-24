@@ -417,6 +417,13 @@
     <parameter key="liip_imagine.binary.loader.default">default</parameter>
     <parameter key="liip_imagine.controller.filter_action">Liip\ImagineBundle\Controller\ImagineController::filterAction</parameter>
     <parameter key="liip_imagine.controller.filter_runtime_action">Liip\ImagineBundle\Controller\ImagineController::filterRuntimeAction</parameter>
+    <parameter key="liip_imagine.webp.generate">false</parameter>
+    <parameter key="liip_imagine.webp.options" type="collection">
+      <parameter key="quality">100</parameter>
+      <parameter key="cache">null</parameter>
+      <parameter key="data_loader">null</parameter>
+      <parameter key="post_processors" type="collection"/>
+    </parameter>
     <parameter key="data_collector.templates" type="collection">
       <parameter key="data_collector.request" type="collection">
         <parameter>request</parameter>
@@ -3479,10 +3486,11 @@
         <argument>security:encode-password</argument>
       </call>
     </service>
-    <service id="doctrine.dbal.logger.chain" class="Doctrine\DBAL\Logging\LoggerChain" public="false" abstract="true">
-      <call method="addLogger">
+    <service id="doctrine.dbal.logger.chain" class="Doctrine\DBAL\Logging\LoggerChain">
+      <argument type="collection">
         <argument type="service" id="doctrine.dbal.logger"/>
-      </call>
+        <argument type="service" id="doctrine.dbal.logger.profiling.default"/>
+      </argument>
     </service>
     <service id="doctrine.dbal.logger.profiling" class="Doctrine\DBAL\Logging\DebugStack" public="false" abstract="true"/>
     <service id="doctrine.dbal.logger.backtrace" class="Doctrine\Bundle\DoctrineBundle\Dbal\Logging\BacktraceLogger" public="false" abstract="true"/>
@@ -3539,12 +3547,6 @@
         <argument>doctrine:database:drop</argument>
       </call>
     </service>
-    <service id="doctrine.database_import_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\ImportDoctrineCommand">
-      <tag name="console.command" command="doctrine:database:import"/>
-      <call method="setName">
-        <argument>doctrine:database:import</argument>
-      </call>
-    </service>
     <service id="doctrine.query_sql_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\RunSqlDoctrineCommand">
       <tag name="console.command" command="doctrine:query:sql"/>
       <call method="setName">
@@ -3558,19 +3560,23 @@
         <argument>dbal:run-sql</argument>
       </call>
     </service>
+    <service id="doctrine.database_import_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\ImportDoctrineCommand">
+      <tag name="console.command" command="doctrine:database:import"/>
+      <call method="setName">
+        <argument>doctrine:database:import</argument>
+      </call>
+    </service>
     <service id="doctrine.dbal.default_connection.configuration" class="Doctrine\DBAL\Configuration" public="false">
       <call method="setSQLLogger">
         <argument type="service" id="doctrine.dbal.logger.chain.default"/>
       </call>
     </service>
     <service id="doctrine.dbal.logger.profiling.default" class="Doctrine\DBAL\Logging\DebugStack" public="false"/>
-    <service id="doctrine.dbal.logger.chain.default" class="Doctrine\DBAL\Logging\LoggerChain" public="false">
-      <call method="addLogger">
+    <service id="doctrine.dbal.logger.chain.default" class="Doctrine\DBAL\Logging\LoggerChain">
+      <argument type="collection">
         <argument type="service" id="doctrine.dbal.logger"/>
-      </call>
-      <call method="addLogger">
         <argument type="service" id="doctrine.dbal.logger.profiling.default"/>
-      </call>
+      </argument>
     </service>
     <service id="doctrine.dbal.default_connection.event_manager" class="Symfony\Bridge\Doctrine\ContainerAwareEventManager" public="false">
       <argument type="service" id=".service_locator.Otd28_S"/>
@@ -5333,6 +5339,8 @@
       <argument type="service" id="liip_imagine.data.manager"/>
       <argument type="service" id="liip_imagine.filter.manager"/>
       <argument type="service" id="liip_imagine.cache.manager"/>
+      <argument>false</argument>
+      <argument>%liip_imagine.webp.options%</argument>
       <argument type="service" id="monolog.logger" on-invalid="ignore"/>
     </service>
     <service id="liip_imagine.controller.config" class="Liip\ImagineBundle\Config\Controller\ControllerConfig" public="false">
@@ -6508,9 +6516,9 @@
         <argument key="security:encode-password">security.command.user_password_encoder</argument>
         <argument key="doctrine:database:create">doctrine.database_create_command</argument>
         <argument key="doctrine:database:drop">doctrine.database_drop_command</argument>
-        <argument key="doctrine:database:import">doctrine.database_import_command</argument>
         <argument key="doctrine:query:sql">doctrine.query_sql_command</argument>
         <argument key="dbal:run-sql">Doctrine\DBAL\Tools\Console\Command\RunSqlCommand</argument>
+        <argument key="doctrine:database:import">doctrine.database_import_command</argument>
         <argument key="doctrine:cache:clear-metadata">doctrine.cache_clear_metadata_command</argument>
         <argument key="doctrine:cache:clear-query">doctrine.cache_clear_query_cache_command</argument>
         <argument key="doctrine:cache:clear-result">doctrine.cache_clear_result_command</argument>
