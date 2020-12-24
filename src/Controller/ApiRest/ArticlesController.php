@@ -93,6 +93,7 @@ class ArticlesController extends AbstractFOSRestController
      */
     public function getSingleArticle(int $articleId): View
     {
+        // ddddddd
         $single_article = $this->articlesService->getSingleArticle($articleId);
         if ($single_article) {
             return View::create($single_article, Response::HTTP_OK);
