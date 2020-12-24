@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="63" column="11" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="11" />
+            <state relative-caret-position="454">
+              <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -191,7 +191,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-5" />
     <option name="y" value="40" />
     <option name="width" value="1940" />
@@ -282,15 +282,15 @@
       <workItem from="1606854253778" duration="1215000" />
       <workItem from="1606860567919" duration="2238000" />
       <workItem from="1606944998957" duration="10582000" />
-      <workItem from="1608808419757" duration="5600000" />
+      <workItem from="1608808419757" duration="5963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25934000" />
+    <option name="totallyTimeSpent" value="26297000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27919462" />
@@ -456,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="63" column="11" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="11" />
+        <state relative-caret-position="454">
+          <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
         </state>
       </provider>
     </entry>
