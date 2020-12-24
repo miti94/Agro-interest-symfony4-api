@@ -3640,7 +3640,7 @@
     </service>
     <service id="doctrine.dbal.default_connection" class="Doctrine\DBAL\Connection" public="true">
       <argument type="collection">
-        <argument key="driver">pdo_postgresql</argument>
+        <argument key="driver">pdo_pgsql</argument>
         <argument key="charset">utf8</argument>
         <argument key="url">%env(resolve:DATABASE_URL)%</argument>
         <argument key="host">localhost</argument>
