@@ -61,24 +61,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/var/log/prod.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="198">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/var/log/dev.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="-15262">
-              <caret line="1174" column="50" selection-start-line="1174" selection-start-column="50" selection-end-line="1174" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/bundles.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
@@ -87,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1914">
+            <state relative-caret-position="1190">
               <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
             </state>
           </provider>
@@ -285,17 +267,6 @@
               <item name="Agro-interest-symfony4-api" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Agro-interest-symfony4-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Agro-interest-symfony4-api" type="462c0819:PsiDirectoryNode" />
-              <item name="var" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Agro-interest-symfony4-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Agro-interest-symfony4-api" type="462c0819:PsiDirectoryNode" />
-              <item name="var" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -349,12 +320,12 @@
       <workItem from="1606944998957" duration="10582000" />
       <workItem from="1608808419757" duration="18695000" />
       <workItem from="1609007193284" duration="320000" />
-      <workItem from="1609020598897" duration="824000" />
+      <workItem from="1609020598897" duration="1438000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40173000" />
+    <option name="totallyTimeSpent" value="40787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -364,7 +335,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329429" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -555,20 +526,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/bundles.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="7" column="58" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/log/dev.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="83">
+          <caret line="1639" column="31" selection-start-line="1639" selection-start-column="31" selection-end-line="1639" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -579,10 +547,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/log/dev.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-15262">
-          <caret line="1174" column="50" selection-start-line="1174" selection-start-column="50" selection-end-line="1174" selection-end-column="50" />
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
         </state>
       </provider>
     </entry>
