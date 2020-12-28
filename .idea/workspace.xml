@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b85d459-3835-4d31-8bdf-4ea659a4eada" name="Default Changelist" comment="change in index.php file">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-    </list>
+    <list default="true" id="8b85d459-3835-4d31-8bdf-4ea659a4eada" name="Default Changelist" comment="change in index.php file" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="32" column="58" lean-forward="true" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+            <state relative-caret-position="85">
+              <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -280,15 +278,15 @@
       <workItem from="1606944998957" duration="10582000" />
       <workItem from="1608808419757" duration="18695000" />
       <workItem from="1609007193284" duration="320000" />
-      <workItem from="1609020598897" duration="5354000" />
+      <workItem from="1609020598897" duration="6653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44703000" />
+    <option name="totallyTimeSpent" value="46002000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1932886" />
@@ -522,8 +520,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="32" column="58" lean-forward="true" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+        <state relative-caret-position="85">
+          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
         </state>
       </provider>
     </entry>
